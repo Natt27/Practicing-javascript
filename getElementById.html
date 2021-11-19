@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Java script</title>
+	</head>
+	<body>
+		<h2 id = "bb"> First JavaScript Programming</h2>
+		<p id = "dd"> 0 </p>
+		<!-- <button onclick = abc()> increment </button> -->
+		<button id = "aa" onclick = "abc()"> Increment </button>
+		<button id = "cc" onclick = "xyz()"> Save </button>
+
+		<script type="text/javascript">
+		countOn = document.getElementById("dd")
+		console.log(countOn)
+		count = 0
+		
+			function abc(){
+				count = count + 1
+				countOn.innerText = count
+				console.log(count)
+
+			function xyz(){
+				console.log(count)
+			}
+		}
+		</script>
+	</body>
+</html>
