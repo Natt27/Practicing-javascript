@@ -5,23 +5,23 @@
 		<title>Java script</title>
 	</head>
 	<body>
-		<h2 id = "bb"> First JavaScript Programming</h2>
-		<p id = "dd"> 0 </p>
+		<h2 id = "id1"> Passenger Counter App</h2>
+		<p id = "id2"> 0 </p>
 		<!-- <button onclick = abc()> increment </button> -->
-		<button id = "aa" onclick = "abc()"> Increment </button>
-		<button id = "cc" onclick = "xyz()"> Save </button>
+		<button id = "id3" onclick = "increment()"> Increment </button>
+		<button id = "id4" onclick = "save()"> Save </button>
 
 		<script type="text/javascript">
-		countOn = document.getElementById("dd")
+		countOn = document.getElementById("id2")
 		console.log(countOn)
 		count = 0
 		
-			function abc(){
+			function increment(){
 				count = count + 1
 				countOn.innerText = count
 				console.log(count)
 
-			function xyz(){
+			function save(){
 				console.log(count)
 			}
 		}

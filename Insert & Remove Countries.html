@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Java script</title>
+	</head>
+	<body>
+		<p id="id1"> Countries </p>
+		<button onclick="GetCountries()"> Get Countries </button>
+
+        <p id="id2"> Pop Countries </p>
+		<button onclick="PopAtEnd()"> Pop Countries </button>
+
+        <p id="id3"> Push Countries </p>
+		<button onclick="PushAtEnd()"> Push Countries </button>
+
+        <p id="id4"> Shift Countries </p>
+		<button onclick="ShiftInFront()"> Shift Countries </button>
+
+        <p id="id5"> Unshift Countries </p>
+		<button onclick="UnshiftInFront()"> Unshift Countries </button>
+
+        <script type="text/javascript">
+
+        LargeCountry = ["China", "India", "USA", "Indonesia", "Pakistan",]
+
+        ChangeC = document.getElementById("id1")
+		//console.log(ChangeC)
+			function GetCountries() {
+				for (let i = 0; i < LargeCountry.length; i++) {
+    				ChangeC.innerText = "- " + LargeCountry //[i]
+					console.log(ChangeC)
+				}
+			}
+            ChangeCountries1 = document.getElementById("id2")
+            function PopAtEnd() {
+                // To insert & delete Arrays value
+                // Pop() & push() used for change values at the end of the array (last value)
+                ChangeCountries1.innerText = LargeCountry.pop() //Remove Pakistan
+                console.log(ChangeCountries1)
+            }
+            ChangeCountries2 = document.getElementById("id3")
+            function PushAtEnd() {
+                // To insert & delete Arrays value
+                // Pop() & push() used for change values at the end of the array (last value)
+                ChangeCountries2.innerText = LargeCountry.push("Greece") //Insert Greece instead of Pakistan
+                console.log(ChangeCountries2)
+            }
+            ChangeCountries3 = document.getElementById("id4")
+            function ShiftInFront() {
+                //shift() & unshift() used for change values in the front of the array (first value)
+                ChangeCountries3.innerText = LargeCountry.shift() //Remove China
+                console.log(ChangeCountries3)
+                }
+            ChangeCountries4 = document.getElementById("id5")
+            function UnshiftInFront() {
+            //shift() & unshift() used for change values in the front of the array (first value)
+            ChangeCountries4.innerText = LargeCountry.unshift("Japan") //Insert Japan instead of Pakistan
+            console.log(ChangeCountries4)
+            }
+
+
+
+// // To insert & delete Arrays value
+// // Pop() & push() used for change values at the end of the array (last value)
+// LargeCountry.pop() //Remove Pakistan
+// LargeCountry.push("Greece") //Insert Greece instead of Pakistan
+// //shift() & unshift() used for change values in the front of the array (first value)
+// LargeCountry.pop() //Remove China
+// LargeCountry.push("Japan") //Insert Japan instead of Pakistan
+
+
+
+		</script>
+	</body>
+</html>

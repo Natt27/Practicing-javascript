@@ -69,4 +69,4 @@ function NewCard() {
         Cards.push(Card)
         RenderGame()
     }
-} //3:58
+} //4:31
