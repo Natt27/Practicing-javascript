@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sorting Fruits </title>
+</head>
+<body>
+    <div id="apple-shelf"></div>
+    <div id="orange-shelf"></div>
+    <script>
+        Fruit = [":apple:", "🍊", ":apple:", ":apple:", "🍊"]
+        AppleShelf = document.getElementById("apple-shelf")
+        OrangeShelf = document.getElementById("orange-shelf")
+
+        function SortFruits(){
+            for (let i = 0; i < Fruit.length; i++) {
+                if (Fruit[i] === ":apple:") {
+                    AppleShelf.textContent += ":apple:"
+                } else {
+                    OrangeShelf.textContent += "🍊"
+                }
+            }
+        }
+        SortFruits()
+    </script>
+</body><!-- 4:38:30-->
+</html>
